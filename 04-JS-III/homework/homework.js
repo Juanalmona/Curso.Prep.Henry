@@ -173,26 +173,15 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  /*
+  
   var mesesEncontrados=[];
   for(var i=0; i < array.length; i++){
-    if(array[i]==='Enero'||array[i]==='Marzo'||array[i]==='Noviembre') mesesEncontrados.push=array[i];
+    if(array[i] === 'Enero' || array[i] === 'Marzo' || array[i] === 'Noviembre') mesesEncontrados.push(array[i]);
   }
-  if(mesesEncontrados.length<3) return 'Nose encontraron los meses pedidos'
-  return mesesEncontrados;
-  */
-  var nuevoArray = [];
-  for(let i= 0; i<array.length; i++) {
-    if(array[i] === 'Enero' || array[i] === 'Marzo' || array[i] === 'Noviembre') {
-      nuevoArray.push(array[i]);
-    }
-  }
-  if(nuevoArray.length < 3) {
-    return 'No se encontraron los meses pedidos';
-  }
-  else {
-      return nuevoArray;
-  }
+  if(mesesEncontrados.length <  3) return 'No se encontraron los meses pedidos';
+  else return mesesEncontrados;
+  
+
 }
 
 
@@ -200,19 +189,21 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  /*
-  var aMayoresACien=[];
-  for(var i=0; i< array.length;i++){
-    if(array[i]>100) aMayoresACien.push=array[i];
+  
+  var aMayoresACien = [];
+  for(var i = 0; i < array.length;i++){
+    if(array[i] > 100) aMayoresACien.push(array[i]);
   }return aMayoresACien;
-  */  var nuevoArray = [];
+  
+  /*
+  var nuevoArray = [];
   for(let i= 0; i < array.length; i++) {
     if(array[i] > 100) {
       nuevoArray.push(array[i]);
     }
   }
   return nuevoArray;
-
+  */
 }
 
 
